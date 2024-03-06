@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(21, 0, 71);
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#mode-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; /* Change this to the color you want */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#mode-button:hover {
+    background-color: #d13e3e; /* Change this to the color you want when the button is hovered */
+}
+
+#mode-button:active {
+    background-color: #170664; /* 버튼을 클릭했을 때 배경색을 어두운 색으로 변경 */
+}
+
+.add {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 50px;
+    color: white;
+}
+
+.board {
+    margin-top: 20px;
+}
+.board div {
+    width: 175px;
+    min-height: 230px;  /* Change height to min-height */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    /*overflow: auto;   Add this line */
+}
+
+
+
+.board div textarea {
+    width: 100%;
+    height: 87%;
+    border: none;
+    resize: none;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.board div button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
